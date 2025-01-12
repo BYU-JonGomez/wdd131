@@ -1,0 +1,161 @@
+body {
+    font-family: "Cinzel", serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgba(29, 77, 114, 1);
+    font-size:small;
+}
+
+.name {
+    color: rgba(247, 255, 5, 255);
+}
+
+h1 {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    color: white;
+    text-align: center;
+    background-color: rgba(29, 77, 114, 1);
+    font-size: 80%;
+}
+
+nav {
+    grid-column-start: 1;
+    grid-column-end:5;
+    background-color: rgb(51, 51, 51);
+}
+@media (min-width: 640px) {
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:hover {
+    border: 1px solid white;
+}
+
+.active {
+    color: yellow;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    margin: 10px;
+}
+
+.card {
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr 0.1fr 1fr;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    gap: 15px;
+}
+
+.card h1 {
+    background-color: rgba(29, 77, 114, 1);
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 10px;
+    text-align: center;
+}
+
+.aboutme {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 10px;
+    text-align: left;
+}
+
+.valparaiso {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.mycountry {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: left;
+}
+
+.chileanflag {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
+    font-style: italic;
+    font-size: 65%;
+}
+
+.jonathanpicture {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.knowledge {
+    display:flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    font-size: 80%;
+}
+
+.knowledge ul li a {
+    font-size: 80%;
+}
+
+footer {
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(29, 77, 114, 1);
+}
+
+footer p {
+    color:yellow;
+}
+.year {
+    color: white;
+}

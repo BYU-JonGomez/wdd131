@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jonathan Gomez</title>
+    <meta name="author" content="Jonathan Gómez" />
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jonathan Gomez - Self introduction webpage" />
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span class="name">Jonathan Gómez</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a>
+            </li>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Canvas</a></li>
+                <li><a href="#">Scriptures</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h1>About Me</h1>
+                <div class="aboutme">
+                    My name is Jonathan Gomez and I go for Cougars. I was born in Punta Arenas, Chile, 
+                    the southern most city in the world. Currently I live in Valparaíso Chile together to my family.
+                    I started this new career as Software Developer with the end in mind and I hope to achieve my dreams.
+                </div>
+                <div class="valparaiso">
+                    Valparaiso, Chile</div>
+                <div class="mycountry">
+                   Valparaíso is one of the most popular cities in Chile. There are almost 350.000 habitants and
+                    is the second largest city in the Chilean Coast, beside Viña del Mar with more than 370.000 habitants.
+                    </div>
+                <div class="chileanflag">
+                    <img src="images/chileanflag.png" alt="chileanflag" height="50px">
+                    <p>Oficial flag of Chile.</p>
+                </div>
+                <div class="joanthanpicture">
+                    <img src="images/profile.webp" alt="jonathanpic" height="80px">
+                </div>
+                
+        </section>
+        <section class="card">
+            <h1>Web Dev Resources</h1>
+            <div class="knowledge">
+                <ul>
+                    <li>
+                        <a rel="devtocommunity" href="https://dev.to/">Dev to Community</a>
+                    </li> 
+                    <li>
+                        <a rel="smashingmagazine" href="https://www.smashingmagazine.com/">Smashing Magazine</a>
+                    </li>
+                    <li>
+                        <a rel="csstricks" href="https://css-tricks.com/">CSS Tricks</a>
+                    <li>
+                        <a rel="w3schools" href="https://www.w3schools.com/">W3 Schools</a>
+                    </li>
+                    <li>
+                        <a rel="udemy" href="https://www.udemy.com/">Udemy</a>
+                    <li>
+                        <a rel="imageplaceholder" href="https://placehold.co/">Image Placeholder</a> 
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="year"><span>&copy</span><span id="current-year"></span>
+        Jonathan Gomez, Chile.
+        </p>
+        <p id="last-modified">This page was last modified on:
+        </p>
+        <script class="script">
+            const lastModifiedDate = document.lastModified;
+            document.getElementById("last-modified").textContent += lastModifiedDate;
+        </script>
+    </footer>
+</body>
+</html>
