@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 2fr 1fr;
     display: grid;
     align-items: center;
@@ -28,7 +28,15 @@ h1 {
     background-color: rgba(29, 77, 114, 1);
     font-size: 80%;
 }
-
+h2 {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    color: white;
+    text-align: center;
+    background-color: rgba(29, 77, 114, 1);
+    font-size: 80%;
+}
 nav {
     grid-column-start: 1;
     grid-column-end:5;
@@ -129,7 +137,7 @@ main {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 4;
-}
+    }
 
 .knowledge {
     display:flex;
