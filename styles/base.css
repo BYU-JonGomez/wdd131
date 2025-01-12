@@ -73,6 +73,7 @@ nav a:hover {
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    max-width: 100%;
     gap: 10px;
     margin: 10px;
 }
