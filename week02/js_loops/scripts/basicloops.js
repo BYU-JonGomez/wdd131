@@ -96,3 +96,49 @@ document.querySelector("#favorite-foods").innerHTML = myInfo.favoriteFoods
 //What if we needed yo uotput the contents of multiple differente Arrays? Can you make what we did above more re-usable?
 
 //1 Create a function that will take a food string and return that string embedded in some html. (<li>food</li>)
+//reusable!
+myInfo = {
+    name: "Brother T",
+    photo: "image/photo.jpg",
+    favoriteFoods: ["Fettucini", "Steak", "Chicken", "Shrimp", "Baked potato"],
+    hobbies: ["Reading", "Fishing", "Camping"],
+    placesLived: [ 
+        {
+            place: "Rexburg, ID",
+            lenght: "5 years",
+        },
+        {
+            place: "Ammon, ID",
+            lenght: "3 years"
+        },
+        {
+            place: "Sandy, UT",
+            lenght: "1 year"
+        },
+    ],
+};
+const foodsElement = document.querySelector("#favorite-foods");
+const placesElement = document.querySelector("#places-lived")
+
+//requires a list, and a callback that will produce an html string
+//returns a string of html
+
+function generateListMarkup(list, templateCallback) {
+    const htmlList = list.map(templateCallback);
+    return htmlList.join("");
+}
+
+//requires a place string
+// returns that string embedded in HTML markup
+function placesTemplate(place) {
+    return "<dt>${place.place}</dt><dd>${place.length}</dd>";
+}
+
+foodsElement.innerHTML = generateListMarkup(
+    myInfo.favoriteFoods,
+    foodsTemplate
+);
+placesElement.innerHTML = generateListMarkup(
+    myInfo.placesLived,
+    placesTemplate
+);
