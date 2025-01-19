@@ -1,0 +1,231 @@
+* {
+    border:0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Cinzel", serif;
+}
+
+header {
+	width: 100%;
+    background-color: #6d8aaf;
+	color: white;
+    display: grid;
+	/* grid-gap: 1rem; */
+	padding: 5px;
+	border: 1px solid rgba(48, 60, 168, 0.1);
+}
+
+.menu_bar {
+    display:none;
+}
+
+header,
+main {
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+nav {
+	width: 90%;
+    max-width: 1000px;
+    background-color: #6d8aaf;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+header nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+
+header nav ul li {
+	float:left;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: larger;
+}
+
+nav a:hover {
+	text-decoration: none;
+	background-color: #eee;
+	color: #000;
+}
+
+.active {
+	color: yellow;
+}
+
+@media screen and (max-width: 800px) {
+    header nav {
+        width: 80%;
+        height: 100%;
+        margin: 0;
+        position:fixed;
+    }
+
+    header nav ul li {
+        display:block;
+        float: left;
+        border-bottom: 1px black;
+    }
+    .menu_bar {
+        display: block;
+        width: 100%;
+    }
+
+    .menu_bar .bt-menu {
+        display: block;
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+  }
+  
+  img {
+    max-width: 220px;
+    max-height: 150px;
+  }
+  
+  figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+  } */

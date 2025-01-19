@@ -10,7 +10,6 @@ header {
     display: grid;
     align-items: center;
     justify-content: center;
-    
     background-color: rgba(29, 77, 114, 1);
     font-size:small;
 }

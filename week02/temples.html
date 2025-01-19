@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD - 133 - Temples</title>
+    <script src="scripts/temples.js" defer></script>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+</head>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <div class="menu_bar">
+            <a href="#" class="bt-menu"><span class="material-symbols-outlined">menu</menu></span></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active" >Home</a>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h2>Home</h2>
+        <h2>Old</h2>
+        <h2>New</h2>
+        <h2>Large</h2>
+        <h2>Small</h2>
+        <figure>
+            <img src="images/accra_ghana_temple.jpg" alt="ghanatemple">
+            <figcaption>Accra Ghana Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/adelaide_australia_temple.jpg" alt="australiatemple">
+            <figcaption>Adelaide Australia Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/anchorage_alaska_temple.jpg" alt="alaskatemple">
+            <figcaption>Anchorage Alaska Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/asunción_paraguay_temple.jpeg" alt="asunciontemple">
+            <figcaption>Asunción Paraguay Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/atlanta_georgia_temple.jpg" alt="atlantatemple">
+            <figcaption>Atlanta Georgia Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/barranquilla_columbia_temple.jpg" alt="barranquillatemple">
+            <figcaption>Barranquilla Colombia Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/billings_montana_temple.jpg" alt="billingstemple">
+            <figcaption>Billings Montana Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/boise_idaho_temple..jpg" alt="boisetemple">
+            <figcaption>Boise Idaho Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/b-city-temple.jpg" alt="brighamtemple">
+            <figcaption>Brigham City Utah Temple</figcaption>
+        </figure>
+    </main>
+    <footer>
+        <p class="year"><span>&copy;</span><span id="current-year"></span>
+        Jonathan Gomez, Valparaíso, Chile.
+        </p>
+        <p id="last-modified">This page was last modified on:
+        </p>
+        <script class="script">
+            const lastModifiedDate = document.lastModified;
+            document.getElementById("last-modified").textContent += lastModifiedDate;
+        </script>
+    </footer>
+    
+</body>
+</html>
