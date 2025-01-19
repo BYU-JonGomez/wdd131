@@ -45,6 +45,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
 	background:#037E8C;
+}
 
 section {
     padding: 10px;
@@ -72,7 +73,7 @@ footer p {
     color: white;
 }
 
-h2 {
+.title {
     text-align: center;
 }
 
@@ -80,4 +81,8 @@ h2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.white {
+    display:none;
 }
