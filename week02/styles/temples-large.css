@@ -7,10 +7,16 @@
         position:fixed;
     }
     header nav ul li {
-        display:block;
+        display: flex;
+        flex-direction: column;
         float: none;
-        border-bottom: 1px solid black;
     }
+
+    header nav ul {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
     .menu_bar {
         display: block;
         width: 100%;
@@ -27,6 +33,6 @@
         box-sizing: border-box;
     }
     .menu_bar span {
-        float:right;
+        float: right;
     }
 }

@@ -68,3 +68,13 @@ footer p {
 .year {
     color: white;
 }
+
+h2 {
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
