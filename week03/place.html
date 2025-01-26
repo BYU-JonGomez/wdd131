@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jonathan Gomez</title>
+    <meta name="author" content="Jonathan Gómez">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jonathan Gomez - Place">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">
+        <h1>Chile</h1>
+    </div>
+    <picture>
+        <!-- <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg" />
+        <source media="(min-width: 800px)" srcset="elva-800w.jpg" /> -->
+        <img src="images/stgo.webp" alt="santiagodechile" width="100%"></img>
+    </picture>
+    <main>
+        <h2 class="datatitle" >Data</h2>
+        <!-- <div class="data" > -->
+            <div class="item">
+                <ul>
+                    <li>Area :</li> 
+                    <li>Population :</li>
+                    <li>Capital :</li>
+                    <li>Languages :</li>
+                    <li>Currency :</li>
+                    <li>Time Zone :</li>
+                    <li>Calling Code :</li>
+                    <li>Internet TLD :</li>
+                </ul>
+            </div>
+            <div class="information">
+                <ul>
+                    <li>547,041 sq km</li> 
+                    <li>27,691,018</li>
+                    <li> Antananarivo</li>
+                    <li>Nakagasy, French</li>
+                    <li>Malagasy Ariary</li>
+                    <li>UTC +3</li>
+                    <li>+261</li>
+                    <li>.mg</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- <div class="weather" > -->
+            <h2 class="weathertitle" >Weather</h2>
+            <picture>
+                <img src="images/weather.svg" alt="weathericon" width="60px">
+            </picture>
+            <div class="weather_item">
+                <ul>
+                    <li>Temperature :</li> 
+                    <li>Conditions :</li>
+                    <li>Wind :</li>
+                    <li>Wind Chill :</li>
+                </ul>
+            </div>
+            <div class="weather_information">
+                <ul>
+                    <li>10°C</li> 
+                    <li>Partly Cloudy</li>
+                    <li>5 km/hr</li>
+                    <li>9.8 °C</li>
+                </ul>
+            </div>
+
+        </table>
+    </main>
+    <footer>
+        <p class="year"><span>&copy;</span><span id="current-year"></span>
+            Jonathan Gomez, Chile.
+            </p>
+            <p id="last-modified">This page was last modified on:
+            </p>
+            <script class="script">
+                const lastModifiedDate = document.lastModified;
+                document.getElementById("last-modified").textContent += lastModifiedDate;
+            </script>
+    </footer>
+    
+</body>
+</html>

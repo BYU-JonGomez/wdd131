@@ -1,0 +1,135 @@
+:root {
+    font-family: Arial;
+    background-color: rgba(0,48,161,255) ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    background-color: red;
+    color:white;
+    height: auto;
+    padding: 2rem;
+    justify-items: center;
+    margin-bottom: 1rem;
+    
+}
+
+picture {
+    margin-bottom: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 0.5rem;
+}
+
+.datatitle {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding:1rem;
+    background-color: rgb(220,36,20);
+    border: 1px solid black;
+    color: white;
+}
+
+.item {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: white;
+    text-align: right;
+}
+.information {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: white;
+    text-align: left;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* .weather {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: greenyellow;
+} */
+
+.weathertitle {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:3;
+    grid-row-end:4;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(220,36,20);
+    border: 1px solid black;
+    color: white;
+}
+
+picture {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:4;
+    grid-row-end:5;
+    text-align: center;
+    background-color: white;
+}
+
+.weather_item {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:5;
+    grid-row-end:6;
+    text-align: right;
+    background-color: white;
+}
+
+.weather_information {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start:5;
+    grid-row-end:6;
+    text-align: left;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: red;
+    text-align: center;
+    height: auto;
+    padding: 2rem;
+}
+
+footer p {
+    color:yellow;
+}
+.year {
+    color: white;
+}
