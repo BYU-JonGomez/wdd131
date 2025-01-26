@@ -17,8 +17,9 @@
     margin-bottom: 1rem;
 }
 
-picture {
+.hero {
     margin-bottom: 1rem;
+    width:100%;
 }
 
 main {
