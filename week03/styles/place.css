@@ -15,7 +15,6 @@
     padding: 2rem;
     justify-items: center;
     margin-bottom: 1rem;
-    
 }
 
 picture {
@@ -64,12 +63,6 @@ li {
     list-style-type: none;
 }
 
-/* .weather {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-color: greenyellow;
-} */
-
 .weathertitle {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -111,19 +104,6 @@ picture {
     background-color: white;
     padding:0.5rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer {
     background-color: red;
