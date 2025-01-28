@@ -1,0 +1,18 @@
+@media screen and (max-width: 800px) {
+    
+    
+    .hero {
+        display: block;
+        opacity: 80%;
+    }        
+
+    .data {
+        position: relative;
+    }
+
+    
+
+    }
+
+
+}
