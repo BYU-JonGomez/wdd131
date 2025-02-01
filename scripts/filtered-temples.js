@@ -117,6 +117,7 @@ const temples = [
 	
 	const img = document.createElement("img");
 	img.src = temple.imageUrl;
+	img.alt = temple.alt;
     img.loading = "lazy";
 	img.style.width = "300px";
     img.style.height = "200px";
