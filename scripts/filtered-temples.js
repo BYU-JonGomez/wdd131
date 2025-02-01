@@ -59,7 +59,7 @@ const temples = [
 	},
 	{
 	  	templeName: "Washington D.C.",
-	  	location: "Kensington, Maryland, United States",
+	  	location: "Kensington, Maryland, US",
 	  	dedicated: "1974, November, 19",
 	  	area: 156558,
 	  	imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg",
@@ -118,7 +118,7 @@ const temples = [
 	const img = document.createElement("img");
 	img.src = temple.imageUrl;
 	img.alt = temple.alt;
-    img.loading = "lazy";
+    img.loading = "eager";
 	img.style.width = "300px";
     img.style.height = "200px";
     img.style.border = "2px solid #000";
