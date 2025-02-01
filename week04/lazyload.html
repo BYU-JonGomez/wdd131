@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - LazyLoad Demonstration - Jonathan Gomez</title>
+    <meta name="author" content="Jonathan Gómez">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jonathan Gomez - Week 04 Lazy Load Demonstration">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Lazy Load exercise</h1>
+    </header>    
+    <main>
+        <picture>
+            <img src="images/test1.webp" alt="ph" loading="lazy" width="400" height="600">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ut odio quod repellat perspiciatis deserunt natus beatae, ullam necessitatibus quaerat aliquam non praesentium autem corrupti! Molestias, delectus! Laborum nesciunt dolorem eius sequi aspernatur nobis, velit iste quibusdam ut nostrum quod magni, sapiente necessitatibus quas sint! Id, dignissimos! Magni, vero facilis?</p>
+        <picture>
+            <img src="images/test2.webp" alt="ph" loading="lazy" width="400" height="600">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nostrum consequatur, blanditiis quia maxime fugiat quidem modi laborum ducimus, voluptate, autem quae provident amet repellat inventore neque quos sequi expedita quisquam culpa. Nostrum laborum deserunt voluptatum distinctio, sed fugit id ea itaque expedita repellendus dolor voluptatibus commodi a veritatis magni.</p>
+        <picture>
+            <img src="images/test3.webp" alt="ph" loading="lazy" width="400" height="600">
+        </picture>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consectetur sapiente suscipit dicta, dolorem temporibus id architecto, hic non, blanditiis dolor quia alias dignissimos! Natus voluptatibus ratione corrupti molestias rem sequi exercitationem nam? Impedit, unde hic ratione molestias totam quisquam officia nostrum dolore a maiores fugit minima ea cupiditate fugiat!</p>
+        <picture>
+            <img src="images/test4.webp" alt="ph" loading="lazy" width="400" height="600">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nulla eos commodi, modi perspiciatis blanditiis delectus ad? Veniam, sequi similique. Dolorem aliquid non soluta, alias voluptatibus ex! Nihil culpa iusto impedit nostrum consequatur explicabo vero voluptatibus tempore repellendus animi eaque, quod, ratione quia veritatis. Cumque ad voluptatum delectus suscipit. Molestiae?</p>
+        <picture>
+            <img src="images/test5.webp" alt="ph" loading="lazy" width="400" height="600">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quis veniam quasi. Ipsam incidunt, nam consequuntur, possimus magni eum nisi fugiat ea facere molestias doloremque et repudiandae minus nobis voluptas quidem ratione. Consectetur, in tempora, ex sint cum, rerum magnam itaque repudiandae illo vitae reprehenderit rem dicta officia similique impedit.</p>
+        <picture>
+            <img src="images/test6.webp" alt="ph" loading="lazy" width="400" height="600">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, excepturi commodi aliquid rerum consequuntur ducimus fugit saepe voluptas. Obcaecati ducimus totam hic fugiat dolorum asperiores iusto ullam. Ullam, voluptatibus? Numquam error ad commodi molestiae nostrum. Totam, at blanditiis laborum cum nihil omnis perferendis facilis dolorem consequuntur natus mollitia deserunt nam.</p>
+    </main>
+    <footer>
+        <p class="year"><span>&copy;</span><span id="current-year"></span>
+        Jonathan Gomez, Chile.
+        </p>
+        <p id="last-modified">This page was last modified on:
+        </p>
+        <script class="script">
+            const lastModifiedDate = document.lastModified;
+            document.getElementById("last-modified").textContent += lastModifiedDate;
+        </script>
+    </footer>
+</body>
+</html>
