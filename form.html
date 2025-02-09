@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jonathan Gomez</title>
+    <meta name="author" content="Jonathan Gómez">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jonathan Gomez - Form work">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <h1 class="title" >Product Review</h1>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <label for="productName">Product Name:</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Choose a Product ...</option>
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <label for="overallrating">Overall Rating:</label>
+                <div class="rating">
+                    <div><label for="star">&#9733;</label><input type="radio" id="star" name="rating" value="1" required></div>
+                    
+                    <div><label for="star">&#9733;&#9733;</label><input type="radio" id="star" name="rating" value="2" required></div>
+                    
+                    <div><label for="star">&#9733;&#9733;&#9733;</label><input type="radio" id="star" name="rating" value="3" required></div>
+                    
+                    <div><label for="star">&#9733;&#9733;&#9733;&#9733;</label><input type="radio" id="star" name="rating" value="4" required></div>
+                    
+                    <div><label for="star">&#9733;&#9733;&#9733;&#9733;&#9733;</label><input type="radio" id="star" name="rating" value="5" required></div>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <label>Date of Installation</label><input type="date" name="compelteDate"></label>
+            </fieldset>
+            
+            <fieldset class="checkboxes">
+                <legend>Which reatures did you find useful in the product?<br></legend><p>(Check all that apply)</p></div>
+                <div><label><input type="checkbox" name="durability" value="yes">Durability</label></div>
+                <div><label><input type="checkbox" name="ease" value="yes">Ease to use</label></div>
+                <div><label><input type="checkbox" name="performance" value="yes">Performance</label></div>
+                <div><label><input type="checkbox" name="design" value="yes">Desing</label></div>
+            </fieldset>
+            <fieldset>
+                <label for="writtenReview">Written Review (Optional)</label>
+                <textarea id="writtenReview" name="writtenReview"></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="userName">Your Name (Optional)</label>
+                <input type="text" id="userName" name="userName">
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Post Review">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p class="year"><span>&copy;</span><span id="current-year"></span>
+        Jonathan Gomez, Chile.
+        </p>
+        <p id="last-modified">This page was last modified on:
+        </p>
+        <script class="script">
+            const lastModifiedDate = document.lastModified;
+            document.getElementById("last-modified").textContent += lastModifiedDate;
+        </script>
+    </footer>
+</body>
+</html>

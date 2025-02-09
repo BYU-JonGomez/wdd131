@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.title,
+footer {
+    font-size: 1.5em;
+    margin: 2% 2% 2% 2%;
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color:white;
+    max-width: 680px;
+
+}
+
+main {
+    max-width: 700px;
+    margin: 2% 2% 2% 2%;
+    background-color: #cfcfcf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    background-color: #cfcfcf;
+}
+fieldset {
+    border: none;
+    margin: 2% 2% 2% 2%; /*ok*/
+}
+
+fieldset [type="date"]  {
+    display:block;
+    width: 100%;
+    max-width: 96%;
+    text-align: left;
+}
+
+.rating {
+    margin: 0; /*ok*/
+    padding: 0;
+    display: flex;
+    width: 100%;
+    max-width: 550px;
+    color: rgb(156, 156, 34);
+}
+
+fieldset div {
+    width: 100%;
+    justify-items: center; /*ok*/
+}
+
+fieldset p {
+    width: 100%;
+    text-align: left;
+    font-style: italic; /*ok*/
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    display:flex;
+    flex-wrap: wrap;
+    width : 100%;
+    max-width: 50px;
+}
+input[type="checkbox"] {
+    margin-left: -15px;
+    width : 50%;
+    max-width: 50px;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+fieldset textarea {
+    display:block;
+    width: 100%;
+    max-width: 96%;
+    text-align: left;
+}
+
+fieldset [type="text"]  {
+    display:block;
+    width: 100%;
+    max-width: 96%;
+    text-align: left;
+}
