@@ -40,7 +40,7 @@ fieldset {
     margin: 2% 2% 2% 2%; /*ok*/
 }
 
-fieldset .dev  [type="date"]  {
+fieldset [type="date"]  {
     display:block;
     width: 100%;
     max-width: 96%;
