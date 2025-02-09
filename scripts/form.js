@@ -39,9 +39,4 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Apply external CSS file
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = "form.css";
-    document.head.appendChild(link);
 });
