@@ -1,6 +1,43 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+
+        position: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("../images/muelle_back.jpg");
+        background-size: cover;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);  
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: right;
+    }
+
+    .nav-list li a {
+        color: white;
+        text-shadow: 2px;
+    }
+
     main {
-        display: flex;
+        display:block;
         flex-direction: column;
     }
 
@@ -81,47 +118,15 @@
         height: auto;
     }
 
-
-
-    
-    header {
-        display:grid;
-        grid-template-columns: 20% 80%;
-        grid-template-rows: 40% 60%;
-        align-items: center;
-        justify-content: space-between;
-    }
-    header h1 {
-        grid-column: 2/3;
-    }
-    header .logo {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    header nav {
-        grid-column: 1/2;
-        grid-row:2/3;
-    }
-
-    header nav ul {
-        grid-column: 1/2;
-        grid-row:2/3;
-        flex-direction: column;
-        justify-content: space-around;   
-    }
-    header nav ul {
-        border-color: white;
-    }
-    header nav ul li a:hover {
-        text-align: center;
-        border-radius: 2rem;
-    }
     .calendar {
         width: 100%;
         height: 100%;
     }
     footer {
         text-align: center;
-        
+    }
+
+    table {
+        list-style: none;
     }
 }

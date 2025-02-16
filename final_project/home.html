@@ -8,7 +8,7 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jonathan Gomez - Final Project">
     <link rel="stylesheet" href="styles/places.css">
     <link rel="stylesheet" href="styles/places-large.css">
-    <script src="scripts/temples.js" defer></script>
+    <script src="./scripts/places.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@100;900&display=swap" rel="stylesheet">
@@ -16,18 +16,16 @@
 
 <body>
     <header>
-        <h1>Viña del Mar</h1>
-        <div class="menu_bar">
-            <a href="#" class="bt-menu"><span class="material-symbols-outlined">menu</span></a>
-        </div>
-        <nav>            
-            <ul>
-                <li><a href="home.html" class="active">Home</a>
-                <li><a href="places.html">Tourist Places</a></li>
-                <li><a href="events.html">Coming Events</a></li>
+        <img class="logo" src="images/logo.webp" alt="logo" >
+        <button id="abrir" class="abrir-menu">Menu</button>
+        <nav class="nav visible" id="nav">            
+            <ul class="nav-list">
+                <button id="cerrar" class="cerrar-menu">Cerrar</button>
+                <li class="li"><a href="home.html" class="a">Home</a></li>
+                <li class="li"><a href="places.html"class="a">Tourist Places</a></li>
+                <li class="li"><a href="events.html"class="a">Coming Events</a></li>
             </ul>
         </nav>
-        <img src="images/logo.webp" alt="logo"  class="logo">
     </header>
 
     <main>
