@@ -124,6 +124,12 @@
             document.getElementById("current-year").textContent = new Date().getFullYear();
             document.getElementById("last-modified").textContent += document.lastModified;
         </script>
+        <div class="localstorage">
+            <h2>Subscribe to newsletter</h2>
+            <input type="text" id="name">
+            <button onclick="saveName()">Subscribe</button>
+            <p id="result"></p>
+        </div>
     </footer>
 </body>
 </html>
