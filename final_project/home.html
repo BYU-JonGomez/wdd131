@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jonathan Gomez</title>
+    <meta name="author" content="Jonathan Gómez">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jonathan Gomez - Final Project">
+    <link rel="stylesheet" href="styles/places.css">
+    <link rel="stylesheet" href="styles/places-large.css">
+    <script src="scripts/temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@100;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Viña del Mar</h1>
+        <div class="menu_bar">
+            <a href="#" class="bt-menu"><span class="material-symbols-outlined">menu</span></a>
+        </div>
+        <nav>            
+            <ul>
+                <li><a href="home.html" class="active">Home</a>
+                <li><a href="places.html">Tourist Places</a></li>
+                <li><a href="events.html">Coming Events</a></li>
+            </ul>
+        </nav>
+        <img src="images/logo.webp" alt="logo"  class="logo">
+    </header>
+
+    <main>
+        <section class="location">
+            <h2>Where is Viña del Mar Located?</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.516680176426!2d-71.5547406847996!3d-33.01534898089857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de3e7b9a7e4f%3A0x9b1f1e1e1e1e1e1e!2sVi%C3%B1a%20del%20Mar%2C%20Valpara%C3%ADso%2C%20Chile!5e0!3m2!1sen!2sus!4v1633029381234!5m2!1sen!2sus" 
+                    loading="lazy"
+                    title="Viña del Mar, Chile">
+                </iframe>
+            </div>
+            <div class="chileanmap">Chilean Map <P></P>
+            <a href="https://www.google.com/maps?q=Vi%C3%B1a+del+Mar,+Chile" target="_blank">
+                <img src="images/chileanmap.jpg" alt="chile-map" class="chile-map" loading="lazy">
+            </a></div>
+        </section>
+        <section class="images">            
+            <div class="flowers">
+                <img src="images/flowerswatch.webp" alt="flowers_watch" loading="eager">
+                <h3>Viña del Mar: From Agricultural Lands to a Tourist Gem<br><br></h3>
+                <h4>Viña del Mar, known as the "Garden City," has a rich history dating back to the 16th century when Spanish settlers established agricultural estates in the region. The land was primarily used for farming and cattle raising until the 19th century, when the Vergara family acquired vast properties. It was José Francisco Vergara who played a crucial role in urbanizing the area, officially founding Viña del Mar in 1878. With the expansion of the railway between Santiago and Valparaíso, the city quickly became a favored seaside retreat for Chile's elite. Its coastal beauty, mild climate, and strategic location contributed to its early growth as a luxury destination.</h4>
+                </div>
+        </section>
+
+        <section class="beaches">    
+            <div class="beach">
+                <img src="images/reñaca.jpg" alt="reñaca_beach" loading="lazy">
+                <h3>Viña del Mar's Evolution into a Cultural and Tourist Hub<br><br></h3>
+                <h4>Throughout the 20th century, Viña del Mar solidified its reputation as Chile's tourism capital. The construction of elegant mansions, hotels, and the Viña del Mar Casino in 1930 transformed the city into a glamorous getaway. Cultural landmarks like the Quinta Vergara Palace and the International Song Festival further boosted its global appeal. Today, Viña del Mar balances modernity with tradition, attracting millions of visitors yearly. From its iconic Flower Clock to its renowned beaches, the city remains a symbol of Chilean elegance and leisure, preserving its history while embracing innovation.</h4>
+            </div>
+        </section>
+     
+        <section class="maininformation">
+            <h2>Viña del Mar - Key Information</h2>
+            <table>
+                <tr>
+                    <th class="left">Attribute</th>
+                    <th> Details</th>
+                </tr>
+                <tr>
+                    <td class="left">Country</td>
+                    <td> Chile</td>
+                </tr>
+                <tr>
+                    <td class="left">Region</td>
+                    <td> Valparaíso</td>
+                </tr>
+                <tr>
+                    <td class="left">Founded</td>
+                    <td> 1878</td>
+                </tr>
+                <tr>
+                    <td class="left">Population</td>
+                    <td> ~324,000 (as of 2023)</td>
+                </tr>
+                <tr>
+                    <td class="left">Area</td>
+                    <td> 121.6 km²</td>
+                </tr>
+                <tr>
+                    <td class="left">Capital</td>
+                    <td> Not a capital city (part of Valparaíso Region)</td>
+                </tr>
+                <tr>
+                    <td class="left">Official Language</td>
+                    <td> Spanish</td>
+                </tr>
+                <tr>
+                    <td class="left">Local Currency</td>
+                    <td> Chilean Peso (CLP)</td>
+                </tr>
+                <tr>
+                    <td class="left">Time Zone</td>
+                    <td> CLT (UTC -4) / CLST (UTC -3 in summer)</td>
+                </tr>
+                <tr>
+                    <td class="left">Calling Code</td>
+                    <td> +56 32</td>
+                </tr>
+                <tr>
+                    <td class="left">Internet Speed</td>
+                    <td> ~200 Mbps (average broadband speed)</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p class="year">
+            <span>&copy;</span> <span id="current-year"></span> Jonathan Gomez, Chile.
+        </p>
+        <p id="last-modified">This page was last modified on: </p>
+        <script>
+            document.getElementById("current-year").textContent = new Date().getFullYear();
+            document.getElementById("last-modified").textContent += document.lastModified;
+        </script>
+    </footer>
+</body>
+</html>

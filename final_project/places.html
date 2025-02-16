@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jonathan Gomez</title>
+    <meta name="author" content="Jonathan Gómez">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jonathan Gomez - Final Project">
+    <link rel="stylesheet" href="styles/places.css">
+    <link rel="stylesheet" href="styles/places-large.css">
+    <script src="scripts/places.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@100;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Viña del Mar</h1>
+        <div class="menu_bar">
+            <a href="#" class="bt-menu">
+                <span class="material-symbols-outlined"></span>Menu</a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="home.html" class="active" >Home</a>
+                <li><a href="places.html">Tourist Places</a></li>
+                <li><a href="events.html">Coming Events</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <img src="images/logo.webp" alt="logo"  class="logo">
+    </header>
+
+    <main>
+        <section class="location">
+            <h2>Places to visit?</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.516680176426!2d-71.5547406847996!3d-33.01534898089857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de3e7b9a7e4f%3A0x9b1f1e1e1e1e1e1e!2sVi%C3%B1a%20del%20Mar%2C%20Valpara%C3%ADso%2C%20Chile!5e0!3m2!1sen!2sus!4v1633029381234!5m2!1sen!2sus" 
+                    loading="lazy"
+                    title="Viña del Mar, Chile">
+                </iframe>
+            </div>
+            <div class="chileanmap">Chilean Map <P></P>
+            <a href="https://www.google.com/maps?q=Vi%C3%B1a+del+Mar,+Chile" target="_blank">
+                <img src="images/chileanmap.jpg" alt="chile-map" class="chile-map" loading="lazy">
+            </a></div>
+        </section>
+        <section class="images">            
+            <div class="flowers">
+                <img src="images/flowerswatch.webp" alt="flowers_watch" loading="eager">
+                <h3>Flowers Watch<br></h3>
+                <h4>The Flower Clock, inaugurated in 1962 as part of the FIFA World Cup hosted by Chile, quickly became a symbol of Viña del Mar. Strategically located at the entrance of the city near Caleta Abarca Beach, it welcomes thousands of visitors every year. Tourists from all over the world flock to this site to take pictures with the beautifully arranged flowers, which change seasonally.<br>
+                This constant influx of visitors directly benefits the local economy by increasing demand for hotels, restaurants, and transportation services. Many tourists extend their stay in Viña del Mar to explore other attractions like the Quinta Vergara, the famous casino, and the coastline, leading to greater revenue for the hospitality industry.</h4>
+                <div class="visit"><a href="https://www.google.com/maps?q=reloj+de+flores,+Vi%C3%B1a+del+Mar,+Chile" target="_blank">
+                    <img src="images/map-icon.png" alt="Visit Quinta Vergara" class="map-link-icon">
+                </a></div>
+                </div>
+        </section>
+
+        <section class="beaches">    
+            <div class="beach">
+                <img src="images/reñaca.jpg" alt="reñaca_beach" loading="lazy">
+                <h3>Reñaca Beach<br></h3>
+                <h4>Reñaca Beach, one of Viña del Mar's most famous coastal attractions, is a hotspot for tourists, surfers, and sunbathers. Known for its golden sands and powerful waves, it attracts visitors from Chile and beyond, especially during the summer.
+                Viña del Mar, founded in 1878, grew as a seaside resort for the elite, later becoming a major tourist and cultural hub. The city blends historical elegance with modern infrastructure, boasting iconic sites like the Flower Clock and the Quinta Vergara Palace.
+                Reñaca has evolved into a vibrant district with luxury apartments, restaurants, and nightlife, solidifying its status as a must-visit destination in Chile.</h4>
+                <div class="visit"><a href="https://www.google.com/maps?q=reñaca,+Vi%C3%B1a+del+Mar,+Chile" target="_blank">
+                    <img src="images/map-icon.png" alt="Visit Reñaca Beach" class="map-link-icon">
+                    </a></div>
+            </div>
+        </section>
+     
+        <section class="theaters">    
+            <div class="theater">
+                <img src="images/festival.avif" alt="viñadelmarfestival" loading="lazy">
+                <h3>Quinta Vergara<br></h3>
+                <h4>Quinta Vergara is one of Viña del Mar's most iconic landmarks, known for its beautiful gardens, historic palace, and world-famous music festival. Originally the estate of the Vergara family, it features the stunning Vergara Palace, a National Monument showcasing neo-Gothic and Venetian influences. The park surrounding the palace is filled with exotic plants, sculptures, and shaded pathways, making it a favorite spot for visitors. Quinta Vergara is best known for hosting the annual Viña del Mar International Song Festival, attracting global artists and thousands of spectators. This cultural and historical gem remains a symbol of Viña del Mar's artistic and natural beauty, drawing tourists year-round.</h4>
+                <div class="visit"><a href="https://www.google.com/maps?q=Quinta+Vergara,+Vi%C3%B1a+del+Mar,+Chile" target="_blank">
+                    <img src="images/map-icon.png" alt="Visit Quinta Vergara" class="map-link-icon">
+                </a></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="year">
+            <span>&copy;</span> <span id="current-year"></span> Jonathan Gomez, Chile.
+        </p>
+        <p id="last-modified">This page was last modified on: </p>
+        <script>
+            document.getElementById("current-year").textContent = new Date().getFullYear();
+            document.getElementById("last-modified").textContent += document.lastModified;
+        </script>
+    </footer>
+</body>
+</html>

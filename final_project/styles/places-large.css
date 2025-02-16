@@ -1,0 +1,127 @@
+@media screen and (max-width: 900px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .images, 
+    .beaches,
+    .theaters {
+        padding: 2%;
+    }
+
+    .images img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .images h3 {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .images h4 {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .beaches img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .beaches h3 {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .beaches h4 {
+        display: block;
+        width: 100%;
+        height: auto;
+    }        
+    .data {
+        position: relative;
+    }
+    .chile-map {
+        display:none;
+    }
+    .theaters .visit {
+        float: right;
+        width: 40px;
+        height: 40px;    
+        justify-self: left;
+    }
+    .beaches .visit {
+        float: left;
+        width: 40px;
+        height: 40px;
+        justify-self: left;
+    }
+    .images .visit {
+        float: right;
+        width: 40px;
+        height: 40px;
+        justify-self: left;
+    }
+    .theaters img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .theaters h3 {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .theaters h4 {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    
+    header {
+        display:grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 40% 60%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header h1 {
+        grid-column: 2/3;
+    }
+    header .logo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    header nav {
+        grid-column: 1/2;
+        grid-row:2/3;
+    }
+
+    header nav ul {
+        grid-column: 1/2;
+        grid-row:2/3;
+        flex-direction: column;
+        justify-content: space-around;   
+    }
+    header nav ul {
+        border-color: white;
+    }
+    header nav ul li a:hover {
+        text-align: center;
+        border-radius: 2rem;
+    }
+    .calendar {
+        width: 100%;
+        height: 100%;
+    }
+    footer {
+        text-align: center;
+        
+    }
+}
